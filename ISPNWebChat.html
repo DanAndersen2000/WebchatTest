@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+		<html>
+			<head>
+	
+			<title>HelpDesk  :: ISPN Helpdesk</title>
+			<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+			<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8"/>
+			<link href="/css/styles_rev3.css?2023122101" type="text/css" rel="stylesheet" />
+			<link href="/css/sort.css" type="text/css" rel="stylesheet" />
+	
+			<link href="/css/clone.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="/js/mootools.js"></script>
+		<script type="text/javascript" src="/js/lib.js?2023122101"></script>
+		<script type="text/javascript" src="/js/tinytableV3.js"></script>
+	</head><body bgcolor="#FFFFFF">
+
+<style>
+			.cx-widget.cx-theme-custom {
+			  color: #FFFFFF;
+			  background-color: #FDFDFD;
+			  scrollbar-face-color: #CCCCCC;
+			}
+			.cx-widget.cx-theme-custom .cx-theme {
+			  background-color: #FDFDFD;
+			  color: #FFFFFF;
+			  border-color: #DAE1E8 !important;
+			}
+			.cx-widget.cx-theme-custom .cx-overlay {
+			  background-color: #FDFDFD;
+			}
+			.cx-widget.cx-theme-custom .cx-svg-icon-tone1 {
+			  fill: #FF4F1F;
+			}
+			.cx-widget.cx-theme-custom .cx-svg-icon-tone2 {
+			  fill: #8C8C8C;
+			}
+			.cx-widget.cx-theme-custom .cx-svg-icon-shadow1 {
+			  fill: #000000;
+			  opacity: 0.2;
+			}
+			.cx-widget.cx-theme-custom .cx-svg-icon-shadow2 {
+			  fill: #000000;
+			  opacity: 0.1;
+			}
+			.cx-widget.cx-theme-custom * {
+			  border-color: #DAE1E8;
+			}
+			.cx-widget.cx-theme-custom .cx-titlebar .cx-title {
+			  color: #FFFFFF;
+			}
+			.cx-widget.cx-theme-custom .cx-buttons-window-control .cx-svg-icon-tone1 {
+			  fill: #8795A6;
+			}
+			.cx-widget.cx-theme-custom .cx-input-icon-overlay .cx-svg-icon-tone1 {
+			  fill: #98A7B8;
+			}
+			.cx-widget.cx-theme-custom .cx-input-group-btn .cx-svg-icon-tone1 {
+			  fill: #FDFDFD;
+			}
+			.cx-widget.cx-theme-custom label {
+			  color: #FFFFFF;
+			}
+			.cx-widget.cx-theme-custom a {
+			  color: #000000;
+			}
+			.cx-widget.cx-theme-custom a:hover {
+			  color: #000000;
+			}
+			.cx-widget.cx-theme-custom .cx-icon-alert-circle {
+			  color: #F53131;
+			}
+			.cx-widget.cx-theme-custom .cx-footer,
+			.cx-widget.cx-theme-custom .cx-branding {
+			  color: #66759B;
+			}
+			.cx-widget.cx-theme-custom .cx-footer *,
+			.cx-widget.cx-theme-custom .cx-branding * {
+			  fill: #66759B;
+			}
+			.cx-widget.cx-theme-custom .cx-form-control.cx-error {
+			  border-color: #F53131;
+			}
+			.cx-widget.cx-theme-custom .cx-form-control::placeholder {
+			  color: #6F7491;
+			}
+			.cx-widget.cx-theme-custom .cx-form-control:-moz-placeholder {
+			  color: #6F7491;
+			}
+			.cx-widget.cx-theme-custom .cx-form-control::-moz-placeholder {
+			  color: #6F7491;
+			}
+			.cx-widget.cx-theme-custom .cx-form-control:-ms-input-placeholder {
+			  color: #6F7491;
+			}
+			.cx-widget.cx-theme-custom .cx-form-control::-webkit-input-placeholder {
+			  color: #6F7491;
+			}
+			.cx-widget.cx-theme-custom input:focus,
+			.cx-widget.cx-theme-custom textarea:focus,
+			.cx-widget.cx-theme-custom .cx-btn:focus,
+			.cx-widget.cx-theme-custom .cx-button-group button:focus,
+			.cx-widget.cx-theme-custom .cx-form-control:not(.cx-error):focus {
+			  border-color: #5791FD !important;
+			}
+			.cx-widget.cx-theme-custom input[type="text"],
+			.cx-widget.cx-theme-custom input[type="email"],
+			.cx-widget.cx-theme-custom input[type="tel"],
+			.cx-widget.cx-theme-custom select,
+			.cx-widget.cx-theme-custom textarea {
+			  background-color: #FDFDFD;
+			  color: #FFFFFF;
+			  border-color: #94948A;
+			}
+			.cx-widget.cx-theme-custom .cx-btn-default {
+			  background: none;
+			  border-color: #DAE1E8 !important;
+			  color: #FDFDFD;
+			  background-color: #555D66;
+			}
+			.cx-widget.cx-theme-custom .cx-btn.cx-disabled {
+			  background: #CCCCCC;
+			}
+			.cx-widget.cx-theme-custom .cx-btn-primary {
+			  color: #FDFDFD;
+			  border-color: #2E69DB !important;
+			  background: #566DD9;
+			  background: -moz-linear-gradient(top,#566DD9 0%,#4375D6 100%);
+			  background: -webkit-linear-gradient(top,#566DD9 0%,#4375D6 100%);
+			  background: linear-gradient(to bottom,#566DD9 0%,#4375D6 100%);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='',endColorstr='',GradientType=0);
+			  background-color: #566DD9;
+			}
+			.cx-widget.cx-theme-custom .cx-button-group .cx-btn-primary:focus,
+			.cx-widget.cx-theme-custom .cx-btn-primary:focus,
+			.cx-widget.cx-theme-custom .cx-button-group .cx-btn-default:focus,
+			.cx-widget.cx-theme-custom .cx-btn-default:focus {
+			  border-color: #000 !important;
+			}
+			.cx-widget.cx-theme-custom .cx-ac-dropdown-menu {
+			  background: #FDFDFD;
+			  border-color: #DAE1E8 !important;
+			}
+			.cx-widget.cx-theme-custom .cx-ac-suggestion:hover,
+			.cx-widget.cx-theme-custom .cx-ac-suggestion.cx-active {
+			  background-color: #5791FD;
+			  color: #FDFDFD;
+			}
+			.cx-widget.cx-theme-custom ::-webkit-scrollbar-thumb {
+			  background: #939399;
+			}
+			.cx-widget.cx-theme-custom .cx-smokescreen {
+			  background-color: #FDFDFD;
+			  opacity: 0.7;
+			}
+			.cx-widget.cx-theme-custom .cx-dialog-container .cx-dialog {
+			  background-color: #FDFDFD;
+			  border-color: #DAE1E8 !important;
+			}
+			.cx-widget.cx-theme-custom .cx-theme-background {
+			  background-color: #FDFDFD;
+			}
+			.cx-widget.cx-theme-custom .cx-theme-border {
+			  border: 1px solid #DAE1E8 !important;
+			}
+			.cx-widget.cx-theme-custom .cx-theme-text {
+			  color: #FFFFFF;
+			}
+			.cx-widget.cx-theme-custom .cx-theme-icon-interactive1 svg .cx-svg-icon-tone1 {
+			  fill: #5081E1;
+			}
+			.cx-widget.cx-theme-custom .cx-theme-icon-positive svg .cx-svg-icon-tone1 {
+			  fill: #34A84F;
+			}
+			.cx-widget.cx-theme-custom .cx-theme-icon-negative svg .cx-svg-icon-tone1 {
+			  fill: #F53131;
+			}
+			.cx-widget.cx-theme-custom .cx-theme-icon-warning svg .cx-svg-icon-tone1 {
+			  fill: #D47F2F;
+			}
+			.cx-widget.cx-theme-custom .cx-warning {
+			  color: #F53131 !important;
+			}
+			.cx-widget.cx-theme-custom .cx-warning .cx-icon svg * {
+			  fill: #F53131 !important;
+			}
+			.cx-widget.cx-theme-custom .cx-countdown {
+			  color: #FFFFFF;
+			}
+			.cx-widget.cx-theme-custom .cx-countdown .cx-icon svg * {
+			  fill: #FFFFFF;
+			}
+			.cx-widget.cx-theme-custom .cx-loading-screen .cx-loading-icon svg g g,
+			.cx-widget.cx-theme-custom .cx-loading-container .cx-loading-icon svg g g {
+			  stroke: #2B74FF;
+			}
+			.cx-widget.cx-theme-custom .cx-loading-screen .cx-loading-icon svg g:first-child g,
+			.cx-widget.cx-theme-custom .cx-loading-container .cx-loading-icon svg g:first-child g {
+			  stroke: #72799D;
+			}
+		</style>
+	
+		<script 
+			src="https://apps.usw2.pure.cloud/widgets/9.0/cxbus.min.js" 
+			onload="javascript:CXBus.configure({debug:false,pluginsPath:'https://apps.usw2.pure.cloud/widgets/9.0/plugins/'}); CXBus.loadPlugin('widgets-core');">
+		</script>
+		
+		<script>
+		window._genesys = {
+		   "widgets": {
+			 "main": {
+				  "preload": ["webchat"],
+			 },
+			 "webchat": {
+			   "transport": {
+				 "type": "purecloud-v2-sockets",
+				 "dataURL": "https://api.usw2.pure.cloud",
+				 "deploymentKey": "6aaab142-32d9-430e-9ad0-0033479c228f",
+				 "orgGuid": "fe646331-84b3-458a-8134-ca6ecb24ae84",
+				 "interactionData": {
+				   "routing": {
+					 "targetType": "QUEUE",
+					 "targetAddress": "ISPN Webchat Demo",
+					 "priority": 2
+				   }
+				 },
+				 "webchat": {
+					  "chatButton": {
+						"enabled": true
+					  }
+					}
+			   },
+			   "userData": {
+				 "addressStreet": "",
+				 "addressCity": "",
+				 "addressState": "",
+				 "addressPostalCode": "",
+				 "phoneNumber": "",
+				 "customField1Label": "",
+				 "customField1": "",
+				 "customField2Label": "",
+				 "customField2": "",
+				 "customField3Label": "",
+				 "customField3": ""
+			   }
+			 }
+		   }
+		 };
+		 
+		 window._genesys.widgets.main.theme = "custom";
+		 
+		function getAdvancedConfig(){
+			return {
+			  "form": {
+				"autoSubmit": false,
+				"firstname": "",
+				"lastname": "",
+				"email": "",
+				"subject": ""
+			  },
+			  "formJSON": {
+				"wrapper": "<table></table>",
+				"inputs": [
+				  {
+					"id": "cx_webchat_form_firstname",
+					"name": "firstname",
+					"maxlength": "100",
+					"placeholder": "Required",
+					"label": "First Name"
+				  },
+				  {
+					"id": "cx_webchat_form_lastname",
+					"name": "lastname",
+					"maxlength": "100",
+					"placeholder": "Required",
+					"label": "Last Name"
+				  },
+				  {
+					"id": "cx_webchat_form_email",
+					"name": "email",
+					"maxlength": "100",
+					"placeholder": "Optional",
+					"label": "Email"
+				  },
+				  {
+					"id": "cx_webchat_form_subject",
+					"name": "subject",
+					"maxlength": "100",
+					"placeholder": "Optional",
+					"label": "Subject"
+				  }
+				]
+			  }
+			}
+		}
+		const customPlugin = CXBus.registerPlugin('Custom');
+		</script>
+		
+		<button type="button" id="chat-button" onclick="customPlugin.command('WebChat.open', getAdvancedConfig());">Start Chat</button>
+
+					</body>
+			</html>
+		
